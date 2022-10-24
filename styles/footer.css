@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root
+{
+    --l-red: #ff525d;
+    --vl-red: #ff7a85;
+    --vd-blue: #1f3f5b;
+    --white: #ffffff;
+    --g-blue: #c8c8cb;
+    --vdg-blue: #4b5862;
+    --vdb-blue: #25252d;
+
+    --vl-back-red: #ff8f70;
+    --l-back-red: #ff3d54;
+
+    --vdg-back-blue: #2c2d3f;
+    --vd-back-blue: #3f4164;
+
+    --font-1: Overpass;
+    --font-2: Ubuntu;
+}
+
+footer
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #2c2d3f;
+    color: white;
+    font-family: var(--font-2);
+    padding: 60px 120px 60px 120px;
+    border-top-right-radius: 60px;
+}
+
+footer h3
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer span, footer img
+{
+    cursor: pointer;
+}
+
+footer span
+{
+    color: var(--g-blue);
+    line-height: 40px;
+}
+
+footer span:hover
+{
+    text-decoration: underline;
+}

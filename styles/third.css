@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root
+{
+    --l-red: #ff525d;
+    --vl-red: #ff7a85;
+    --vd-blue: #1f3f5b;
+    --white: #ffffff;
+    --g-blue: #c8c8cb;
+    --vdg-blue: #4b5862;
+    --vdb-blue: #25252d;
+
+    --vl-back-red: #ff8f70;
+    --l-back-red: #ff3d54;
+
+    --vdg-back-blue: #2c2d3f;
+    --vd-back-blue: #3f4164;
+
+    --font-1: Overpass;
+    --font-2: Ubuntu;
+}
+
+.third
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left -30% top 10%;
+    height: 850px;
+    margin-top: 120px;
+    font-family: var(--font-1);
+    padding-right: 120px;
+}
+
+.third h1
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0px 0px 40px 0px;
+}
+
+.third p
+{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 625px;
+}
+
+.t2 h1
+{
+    margin-top: 100px;
+}
+
+.text
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}

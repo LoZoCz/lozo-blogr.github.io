@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root
+{
+    --l-red: #ff525d;
+    --vl-red: #ff7a85;
+    --vd-blue: #1f3f5b;
+    --white: #ffffff;
+    --g-blue: #c8c8cb;
+    --vdg-blue: #4b5862;
+    --vdb-blue: #25252d;
+
+    --vl-back-red: #ff8f70;
+    --l-back-red: #ff3d54;
+
+    --vdg-back-blue: #2c2d3f;
+    --vd-back-blue: #3f4164;
+
+    --font-1: Overpass;
+    --font-2: Ubuntu;
+}
+
+header
+{
+    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+    background-repeat: no-repeat;
+    background-position: 10%;
+    color: #ffffff;
+    border-bottom-left-radius: 60px;
+    font-family: var(--font-1);
+}
+
+header h1
+{
+    font-size: 56px;
+    margin: 0px;
+}
+
+.mid-text p
+{
+    font-size: 20px;
+    margin: 25px;
+    opacity: 70%;
+}
+
+.start
+{
+   font-family: inherit;
+   background-color: #ffffff;
+   border: none;
+   padding: 15px 35px 15px 35px;
+   border-radius: 500px;
+   font-size: 20px; 
+   color: #ff3d54;
+   font-weight: 600;
+   margin: 20px 20px 180px 20px;
+   cursor: pointer;
+   transition: ease-in-out 0.15s;
+}
+
+.hamburger
+{
+    display: none;
+}
+
+.start:hover, .log-reg button:hover
+{
+    background-color: #ff7a85;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.learn
+{
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    outline: 2px solid #ffffff;
+    padding: 15px 35px 15px 35px;
+    border-radius: 500px;
+    font-size: 20px; 
+    color: #ffffff;
+    font-weight: 600; 
+    margin: 20px 20px 180px 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
+}
+
+.learn:hover
+{
+    background-color: #ffffff;
+    color: #ff9fa7;
+    font-weight: 600;
+}
+
+nav
+{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 200px 1fr 200px;
+    padding: 40px 30px 40px 30px;
+}
+
+.infos a
+{
+    margin: 0px 10px 0px 10px;
+    font-weight: 600;
+    color: var(--vdb-blue);
+}
+
+.infos a:hover
+{
+    color: white;
+}
+
+.infos img
+{
+    margin: 0px 10px 0px 10px;
+}
+
+.infos a:active, .infos a:hover, .infos a:link, .infos a:visited
+{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+picture
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+picture img
+{
+    cursor: pointer;
+}
+
+.log-reg
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log-reg a
+{
+    margin: 0px 10px 0px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.log-reg a:active, .infos a:hover, .infos a:link, .infos a:visited
+{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.log-reg button
+{
+    font-family: inherit;
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 20px 12px 20px;
+    width: 118px;
+    border-radius: 500px;
+    color: #ff3d54;
+    font-weight: 600;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
+}
+
+.head-text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.menu
+{
+    position: absolute;
+    color: var(--vdb-blue);
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 15px 30px 15px 30px;
+    font-weight: 500;
+    font-family: var(--font-2);
+    width: 90px;
+    box-shadow: 0px 0px 100px -45px rgba(66, 68, 90, 1);
+}
+
+.menu li
+{
+    list-style: none;
+    margin: 8px 0px 8px 0px;
+}
+
+.menu ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li a, .menu1 li a, .menu2 li a 
+{
+    color: var(--vdb-blue);
+    text-decoration: none;
+}
+
+.menu li a:hover, .menu1 li a:hover, .menu2 li a:hover
+{
+    font-weight: 700;
+}
+
+.menu1
+{
+    position: absolute;
+    color: var(--vdb-blue);
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 15px 30px 15px 30px;
+    font-weight: 500;
+    font-family: var(--font-2);
+    width: 90px;
+    box-shadow: 0px 0px 100px -45px rgba(66, 68, 90, 1);
+}
+
+.menu1 li
+{
+    list-style: none;
+    margin: 8px 0px 8px 0px;
+}
+
+.menu1 ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu2
+{
+    position: absolute;
+    color: var(--vdb-blue);
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 15px 30px 15px 30px;
+    font-weight: 500;
+    font-family: var(--font-2);
+    width: 90px;
+    box-shadow: 0px 0px 100px -45px rgba(66, 68, 90, 1);
+}
+
+.menu2 li
+{
+    list-style: none;
+    margin: 8px 0px 8px 0px;
+}
+
+.menu2 ul
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.prodPng, .compPng, .connPng
+{
+    transition: ease-in-out 0.3s;
+}
+
+.hamburgerMenu
+{
+    background-color: white;
+    width: 300px;
+    padding: 30px 20px 30px 20px;
+    display: none;
+    position: absolute;
+    color: #25252d;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    top: 90px;
+    left: 19px;
+}
+
+.hamburgerMenu ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.hamburgerMenu li
+{
+    list-style: none;
+    line-height: 35px;
+}
+
+.hamburgerMenu a
+{
+    font-weight: 600;
+    color: #25252d;
+}
+
+.hamburgerMenu button
+{
+    font-family: inherit;
+    background-image: linear-gradient(120deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+    border: none;
+    padding: 12px 20px 12px 20px;
+    width: 118px;
+    border-radius: 500px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
+}
+
+.hamburgerMenu a:link, .hamburgerMenu a:active, .hamburgerMenu a:visited, .hamburgerMenu a:hover
+{
+    text-decoration: none;
+}
+
+.prodPng1, .compPng1, .connPng1
+{
+    transition: ease-in-out 0.3s;
+}
+
+.prodDivCs, .compDivCs, .connDivCs
+{
+    background-color: #f2f2f2;
+    color: #3f4164;
+    border-radius: 5px;
+    padding: 20px;
+
+}
